@@ -18,7 +18,36 @@
 <meta name="keywords" content="Christian, women"/>
 <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="tay.css" />
-  
+  <script src="jquery3.3.1.js"></script>
+  <script async>
+  $(document).ready(function(){
+	$(".peaceTitle").hide();
+	$(".peaceVerse").hide();
+	$(".peaceVerseCitation").hide();
+	$(".wisdomTitle").hide();
+	$(".wisdomVerse").hide();
+	$(".wisdomVerseCitation").hide();
+	
+	$(".peaceVerseButton").click(function() {
+		$(".wisdomTitle").hide()
+		$(".wisdomVerse").hide();
+		$(".wisdomVerseCitation").hide();
+		$(".peaceTitle").show();
+		$(".peaceVerse").show();
+		$(".peaceVerseCitation").show();
+	});
+	
+	$(".wisdomVerseButton").click(function(){
+		$(".wisdomTitle").show();
+		$(".wisdomVerse").show();
+		$(".wisdomVerseCitation").show();
+		$(".peaceTitle").hide();
+		$(".peaceVerse").hide();
+		$(".peaceVerseCitation").hide();
+	
+	});
+	});
+  </script>
   <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
@@ -84,6 +113,51 @@
 				<p> I want to show the world what a millennial’s walk with Christ looks like. This is one of the platforms I use to 
 				accomplish that. I have <a href="devotionals.html">Devotionals</a> available, <a href="projects.html">volunteer projects</a> 
 				and <a href="blog.html">blog posts</a>, so take a look and see if anything peeks your interest!
+				
+				<p class="center"><button class="peaceVerseButton">Verses About Peace</button></p>
+				<p class="center"><button class="wisdomVerseButton">Verses About Wisdom</button></p>
+		<p class="peaceTitle">Verses about Peace</p>
+		<p class="peaceVerse">"Let the peace of Christ rule in your hearts, since as members of one body you were called to peace. And be thankful."</p>
+		<p class="peaceVerseCitation">Colossians 3:15</p>
+		
+		<p class="peaceVerse">"But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law."</p>
+		<p class="peaceVerseCitation">Galations 5:22</p>
+		
+		<p class="peaceVerse">"Make every effort to live in peace with everyone and to be holy; without holiness no one will see the Lord."</p>
+		<p class="peaceVerseCitation">Hebrews 12:14</p>
+		
+		
+		<p class="peaceVerse">“Cast all your anxiety on him because he cares for you.”</p>
+		<p class="peaceVerseCitation">1 Peter 5:7</p>
+		
+		<p class="peaceVerse">“They must turn from evil and do good; they must seek peace and pursue it."</p>
+		<p class="peaceVerseCitation">1 Peter 3:11</p>
+		
+		<p class="peaceVerse">“Peacemakers who sow in peace reap a harvest of righteousness.”</p>
+		<p class="peaceVerseCitation">James 3:18 </p>
+		
+		<p class="peaceVerse">“And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.”</p>
+		<p class="peaceVerseCitation">Philippians 4:7</p>
+		
+		<p class="peaceVerse">“The Lord gives strength to his people; the Lord blesses his people with peace.”</p>
+		<p class="peaceVerseCitation">Psalm 29:11</p>
+		
+		<p class="peaceVerse">“If it is possible, as far as it depends on you, live at peace with everyone.”</p>
+		<p class="peaceVerseCitation">Romans 12:18</p>
+		
+		<p class="peaceVerse">“Let us therefore make every effort to do what leads to peace and to mutual edification.”</p>
+		<p class="peaceVerseCitation">Romans 14:19</p>
+		
+		
+		<p class="wisdomTitle">Verses about Wisdom</p>
+		<p class="wisdomVerse">“Make sure that nobody pays back wrong for wrong, but always strive to do what is good for each other for everyone else.”</p>
+		<p class="wisdomVerseCitation">1 Thessalonians 5:15</p>
+		
+		<p class="wisdomVerse">“Deceit is in the hearts of those who plot evil, but those who promote peace have joy.” </p>
+		<p class="wisdomVerseCitation">Proverbs 12:20</p>
+		
+		<p class="wisdomVerse">-“Do not repay evil with evil or insult with insult. On the contrary, repay evil with blessing, because to this you were called so that you may inherit a blessing. For “Whoever would love life and see good days must keep their tongue from evil and their lips from deceitful speech. They must turn from evil and do good; they must seek peace and pursue it.”</p>
+		<p class="wisdomVerseCitation">1 Peter 3:9-11</p>
 
 			</p>
 			<br>
@@ -99,7 +173,7 @@
 	  
 	  
 		
-		<!-- Requirment for transition met with the expansion of all images within aside elements. -->
+
 	
 		<aside>
 			<p class="title">Weekly Prayer</p>
@@ -115,7 +189,7 @@
 	  </main>
 
 
-<!-- Requirment for text effect met below -->
+
 
 	<footer>
 		<p class="shadow">Contact Faith:</p>
